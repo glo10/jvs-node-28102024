@@ -1,0 +1,39 @@
+{
+  "name": "node-10062024",
+  "version": "1.0.0",
+  "description": "---",
+  "main": "index.js",
+  "scripts": {
+    "t:u": "vitest",
+    "t:u:3": "vitest tests/0-exercices/corrections/ex3/math.test.mjs",
+    "t:i:4": "vitest tests/0-exercices/corrections/ex4/app.test.mjs",
+    "t:i:5": "vitest tests/0-exercices/corrections/ex5/src/app.test.mjs",
+    "t:i:6": "vitest tests/0-exercices/corrections/ex6/src/app.test.mjs",
+    "t:i:7": "vitest tests/0-exercices/corrections/ex7/app.test.mjs",
+    "t:i:8": "vitest tests/0-exercices/corrections/ex8/src/app.test.mjs",
+    "t:i:97": "vitest tests/0-exercices/corrections/ex9/ex7-middleware/app.test.mjs",
+    "t:i:98": "vitest tests/0-exercices/corrections/ex9/ex8-middleware/src/app.test.mjs",
+    "t:f": "cypress open",
+    "x1": "node --watch 0-exercices/corrections/ex1/index.mjs",
+    "x4": "node --watch 0-exercices/corrections/ex4/index.mjs",
+    "x5": "node --watch 0-exercices/corrections/ex5/src/index.mjs",
+    "x6": "node --watch 0-exercices/corrections/ex6/src/index.mjs",
+    "x7": "node --watch 0-exercices/corrections/ex7/bin/www",
+    "x8": "node --watch 0-exercices/corrections/ex8/src/index.mjs",
+    "x97": "node --watch 0-exercices/corrections/ex9/ex7-middleware/bin/www",
+    "x98": "node --watch 0-exercices/corrections/ex9/ex8-middleware/src/app.mjs",
+    "x10": "node --watch 0-exercices/corrections/ex10/bin/www",
+    "x11": "node --watch 0-exercices/corrections/ex11/bin/www",
+    "x12": "node --watch 0-exercices/corrections/ex12/src/app.mjs"
+  },
+  "author": "Glodie Tshimini",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "cypress": "^13.15.0",
+    "eslint": "^9.13.0",
+    "globals": "^15.11.0",
+    "supertest": "^7.0.0",
+    "vitest": "^2.1.0"
+  }
+}
