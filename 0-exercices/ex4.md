@@ -13,6 +13,6 @@
 Voici les caractéristiques du serveur Web Node :
 - Écoute sur le ***port 4000*** ;
 - Dans la console, indiquez l'url *`http://localhost:4000`* ;
-- Retournez une ***réponse en JSON*** *`{"message":"success"}`* pour une requête sur la page d'accueil dont la route est `/` et le code status HTTP 200 ;
-- Retournez une ***réponse en JSON*** *`{"message":"not found"}`* pour tout autre requête en dehors de la page d'accueil et le code status HTTP 404 ;
+- Retournez une ***réponse en JSON*** *`{"message":"success"}`* pour une requête sur la page d'accueil dont la route est `/` et le code status HTTP ***200*** ;
+- Retournez une ***réponse en JSON*** *`{"message":"not found"}`* pour tout autre requête en dehors de la page d'accueil et le code status HTTP ***404*** ;
 
