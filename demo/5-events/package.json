@@ -1,0 +1,12 @@
+{
+  "name": "5-events",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "node --watch index.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
