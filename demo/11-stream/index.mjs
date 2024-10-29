@@ -1,6 +1,6 @@
 // Création d'un client Web (similaire à un fetch() côté fetch())
 import { get } from 'node:https'
-import { createWriteStream, WriteStream } from 'node:fs'
+import { createWriteStream } from 'node:fs'
 const url = 'https://raw.githubusercontent.com/dr5hn/countries-states-cities-database/refs/heads/master/json/countries%2Bstates%2Bcities.json'
 /**
  * param 1 : url du serveur distant
@@ -8,7 +8,8 @@ const url = 'https://raw.githubusercontent.com/dr5hn/countries-states-cities-dat
  */
 get(url, (res) => {
     if(res.statusCode === 200) {
-        // WriteStream('data.json')
+        const writer = createWriteStream('./data.json')
+        res.pipe(writer)
         // Ecoute de l'événement (à la réception d'un paquet)
         res.on('data', (chunk) => {
             console.log('chunk', chunk)
