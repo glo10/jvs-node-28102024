@@ -15,7 +15,7 @@ Pour les unitaires et d'intégration
 ### Installation
 
 1. `npm i vitest`
-2. Fichier de configuration ***vitest.config.(m)js*** à créer à la racine de votre projet au même niveau que le ***package.json*** et à configurer à partir de la documentation de [vitest]()
+2. Fichier de configuration ***vitest.config.(m)js*** à créer à la racine de votre projet au même niveau que le ***package.json*** et à configurer à partir de la documentation de [vitest](https://vitest.dev/config/)
 
 ```js
 import { defineConfig } from 'vitest/config'
