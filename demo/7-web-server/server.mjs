@@ -18,6 +18,7 @@ createServer((req, res) => {
      */
     const headers = {
         // ici les en-têtes HTTP à rajouter
+        // Exemple 'Content-Type' : 'application/json'
     }
     res.writeHead(200, headers)
     res.write(`

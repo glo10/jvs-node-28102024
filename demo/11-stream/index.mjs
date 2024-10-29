@@ -4,7 +4,7 @@ import { createWriteStream } from 'node:fs'
 const url = 'https://raw.githubusercontent.com/dr5hn/countries-states-cities-database/refs/heads/master/json/countries%2Bstates%2Bcities.json'
 /**
  * param 1 : url du serveur distant
- * callback contenant le retour du serveur distant
+ * callback function contenant le retour du serveur distant
  */
 get(url, (res) => {
     if(res.statusCode === 200) {
@@ -15,8 +15,8 @@ get(url, (res) => {
             console.log('chunk', chunk)
         })
 
-        res.on('error', () => {
-            console.log('erreur durant le processus')
+        res.on('error', (error) => {
+            console.log('erreur durant le processus', error.message)
         })
         res.on('end', () => {
             console.log('Fin de réception des données')
