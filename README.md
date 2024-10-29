@@ -8,6 +8,18 @@
 
 ---
 
+## Demos
+
+- [Dossiers des demos](./demo/)
+
+---
+
+## Corrections des exercices
+
+- [Dossiers des corrections](./0-exercices/corrections/)
+
+---
+
 ## Installation
 
 - [Node](https://nodejs.org/en/download/package-manager)
