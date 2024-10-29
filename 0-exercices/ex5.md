@@ -1,7 +1,7 @@
 # Exercice 5 : serveur Web avec les pages HTML
 
 1. Initialisez un nouveau projet avec npm en y ajoutant le module ***ESLINT***.
-2. Créez un ***serveur Web** qui permet de rendre le contenu d'une ***page HTML*** à partir de la route /
+2. Créez un **serveur Web** qui permet de rendre le contenu d'une ***page HTML*** à partir de la route /
 
 ## Spécifications techniques
 
