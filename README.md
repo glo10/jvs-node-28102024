@@ -58,9 +58,12 @@
 
 ## Module SQLite avec Node
 
+- Depuis Node ***V23.1.0***, il y a la dépendance [*node:sqlite*](https://nodejs.org/api/sqlite.html) interne
+- Sinon l'utilisation du module externe [sqlite3](https://www.npmjs.com/package/sqlite3)
 
 ## Module MySQL avec Node
 
+- [Documentation](https://sidorares.github.io/node-mysql2/docs)
 
 ### Testing
 
