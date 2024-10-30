@@ -6,8 +6,8 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 // Import des routes (Dans le cadre Express, les routes sont dans le dossier routes)
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var indexRouter = require('./routes/indexRouter');
+var usersRouter = require('./routes/usersRouter');
 
 // Création de la nouvelle instance d'Express
 var app = express();
