@@ -1,4 +1,11 @@
 const users = require('../models/usersModel')
+
+function getUsers(req, res) {
+  res.status(200).json(users)
+}
+function getUser(req, res) {}
+function postUser(req, res) {}
+
 function homeUser(req, res, next) {
     const title = 'Liste d\'utilisateurs'
     // users/list va charger le fichier views/users/list.ejs
@@ -16,5 +23,8 @@ function homeUser(req, res, next) {
   }
 module.exports = {
   homeUser,
-  singleUser
+  singleUser,
+  getUser,
+  getUsers,
+  postUser
 }

@@ -8,6 +8,7 @@ var logger = require('morgan');
 // Import des routes (Dans le cadre Express, les routes sont dans le dossier routes)
 var indexRouter = require('./routes/indexRouter');
 var usersRouter = require('./routes/usersRouter');
+const usersApiRouter = require('./routes/usersApiRouter')
 
 // Création de la nouvelle instance d'Express
 var app = express();
@@ -26,6 +27,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Utilisation des routes de notre application
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/api/users', usersApiRouter)
 
 /**
  * Middleware qui gère les erreurs côté client
