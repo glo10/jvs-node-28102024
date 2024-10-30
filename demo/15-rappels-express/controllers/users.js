@@ -1,10 +1,20 @@
+const users = require('../models/users')
 function homeUser(req, res, next) {
-    const users = [
-        { name: 'Glodie' },
-        { name: 'Marie' },
-    ]
     const title = 'Liste d\'utilisateurs'
     // users/list va charger le fichier views/users/list.ejs
     res.render('users/list', { users, title })
   }
-module.exports = homeUser
+
+  function singleUser(req, res, next) {
+    // Récupérer l'id à partir des paramètres de la requête
+    // console.log('req', req.params, req.body)
+    const id = parseInt(req.params.id)
+    const user = users.find(u => u.id === id )
+    const title = `Page détaillée ${user.name}`
+    // users/single va charger le fichier views/users/single.ejs
+    res.render('users/single', { user, title })
+  }
+module.exports = {
+  homeUser,
+  singleUser
+}
