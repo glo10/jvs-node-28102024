@@ -1,5 +1,5 @@
 const users = require('../models/usersModel')
-
+console.log('users', JSON.stringify(users))
 function getUsers(req, res) {
   res.status(200).json(users)
 }
