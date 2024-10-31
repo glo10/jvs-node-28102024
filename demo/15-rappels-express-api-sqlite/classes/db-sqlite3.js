@@ -33,7 +33,13 @@ INSERT INTO product(
     price
     )
 VALUES (?,?,?,?,?)`
-db.run(addProductSQL, ['product1', 'reference1', 'desc1', 'http://app/ref1', 150], (error) => {
+db.run(addProductSQL, ['product2', 'reference2', 'desc2', 'http://app/ref2', 50], (error) => {
   if(!error) console.log('Ajout OK')
   else console.error('Ajout failed', error.message)
+})
+
+const productsSql = `SELECT * FROM product`
+db.all(productsSql, (error, rows) => {
+  if(!error) console.log('rows', rows)
+  else console.error('get all products failed')
 })

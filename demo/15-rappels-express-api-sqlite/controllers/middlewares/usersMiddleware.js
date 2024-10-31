@@ -1,4 +1,4 @@
-const validId = (req, res, next) => {
+const checkId = (req, res, next) => {
     const id = req.params.id
     if(/[0-9]+/.test(id)) {
         next()
@@ -8,5 +8,5 @@ const validId = (req, res, next) => {
 }
 
 module.exports = {
-    validId
+    checkId
 }
