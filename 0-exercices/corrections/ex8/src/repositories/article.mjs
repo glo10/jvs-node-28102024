@@ -1,6 +1,8 @@
 import { fileURLToPath } from 'node:url'
 import { resolve, dirname } from 'node:path'
 import { createReadStream, createWriteStream } from 'node:fs'
+import { isValidArticle } from '../functions/validator.mjs'
+import { generateNewId } from '../functions/generator-number.mjs'
 const currentFileDir = dirname(fileURLToPath(import.meta.url))
 const articlesFilename = resolve(currentFileDir, '..', 'data', 'le-monde.json')
 let reader = createReadStream(articlesFilename)
@@ -28,6 +30,7 @@ export const getOneById = async (id) => {
   .then(articles => {
     if(/[0-9]+/.test(id))
       return articles.find(item => parseInt(id) === parseInt(item.id))
+    throw new Error (`${id} not a numeric`)
   })
   .catch(error => error)
 }
@@ -111,35 +114,12 @@ export const updateOneById = async (id, newValues) => {
   .catch(error => error)
 }
 
-const isValidArticle = (item) => {
-  if(
-    /.+/.test(item?.title) && 
-    /.+/.test(item?.description) &&
-    /^https?:\/\//.test(item?.link) &&
-    /^https?:\/\//.test(item?.enclosure)
-  ) {
-    return true
-  }
-  return false
-}
-
-const writeJSONPromise = (filename, newContent, successMessageJSON, errorMessageJSON) => {
+const writeJSONPromise = (filename, newContent, successMsg, errorMsg) => {
   return new Promise((resolve, reject) => {
     const ws = createWriteStream(filename)
     ws.write(JSON.stringify(newContent), (error) => {
-      if (error) reject(new Error(errorMessageJSON))
-      resolve(successMessageJSON)
+      if (error) reject(new Error(errorMsg))
+      resolve(successMsg)
     })
-  })
-}
-
-const generateNewId = async () => {
-  return getAll()
-  .then(articles => {
-    let newId = 1
-    do{
-      newId = Math.floor(Math.random()*1000)
-    } while(articles.find(article => article.id === newId))
-    return newId
   })
 }

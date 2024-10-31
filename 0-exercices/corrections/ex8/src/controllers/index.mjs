@@ -2,8 +2,9 @@ import { fileURLToPath } from 'node:url'
 import { resolve, dirname } from 'node:path'
 import { createReadStream } from 'node:fs'
 
-export const all = (req, res) => {
-  res.sendFile('/public/index.html')
+export const defaultPage = (req, res) => {
+  const pbc = resolve(dirname(fileURLToPath(import.meta.url)), '..', 'public')
+  res.sendFile(`${pbc}/index.html`)
 }
 
 export const fetchDoc = (req, res) => {
