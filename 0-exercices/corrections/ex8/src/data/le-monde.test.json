@@ -1,0 +1,44 @@
+{
+    "rss": {
+      "script": "",
+      "channel": {
+        "title": "International : Toute l’actualité sur Le Monde.fr.",
+        "description": "International - Découvrez gratuitement tous les articles, les vidéos et les infographies de la rubrique International sur Le Monde.fr.",
+        "copyright": "Le Monde - L’utilisation des flux RSS du Monde.fr est réservée à un usage strictement personnel, non professionnel et non collectif. Toute autre exploitation doit faire l’objet d’une autorisation et donner lieu au versement d’une rémunération. Contact : syndication@lemonde.fr",
+        "link": [
+          "https://www.lemonde.fr/international/rss_full.xml",
+          ""
+        ],
+        "pubDate": "Tue, 30 Apr 2024 08:29:26 +0000",
+        "language": "fr",
+        "item": [
+          {
+            "id" : 1,
+            "title": " En Iran, la police des mœurs revient en force ",
+            "pubDate": "Tue, 30 Apr 2024 10:00:07 +0200",
+            "description": " Les autorités ont lancé une nouvelle opération baptisée « Plan de la lumière » contre les femmes qui refusent de se voiler, une liberté arrachée après la mort en garde à vue, en septembre 2022, de Mahsa Amini. ",
+            "guid": "https://www.lemonde.fr/international/article/2024/04/30/en-iran-la-police-des-m-urs-revient-en-force_6230744_3210.html",
+            "link": "https://www.lemonde.fr/international/article/2024/04/30/en-iran-la-police-des-m-urs-revient-en-force_6230744_3210.html",
+            "content": {
+              "description": "Arrestation d’une jeune fille par la police des mœurs à Téhéran, le 17 avril 2024",
+              "credit": "VAHIDONLINE/TELEGRAM"
+            },
+            "enclosure": "https://img.lemde.fr/2024/04/29/0/0/1170/1767/700/0/75/0/aabb8f5_1714404312517-iran.jpg"
+          },
+          {
+            "id": 2,
+            "title": " Migrants africains à Mayotte : l’Etat face à la pression des collectifs de citoyens ",
+            "pubDate": "Tue, 30 Apr 2024 09:20:23 +0200",
+            "description": " Le maire de Mamoudzou a pris un arrêté d’interdiction d’occupation de la voie publique. Des abris et les bureaux d’une association d’entraide ont été vandalisés. ",
+            "guid": "https://www.lemonde.fr/afrique/article/2024/04/30/migrants-africains-a-mayotte-l-etat-face-a-la-pression-des-collectifs-de-citoyens_6230738_3212.html",
+            "link": "https://www.lemonde.fr/afrique/article/2024/04/30/migrants-africains-a-mayotte-l-etat-face-a-la-pression-des-collectifs-de-citoyens_6230738_3212.html",
+            "content": {
+              "description": "A Mamoudzou, dans le quartier du stade de Cavani, des réfugiés roulent nattes et matelas afin de ne pas gêner le passage sur les trottoirs, le 20 avril 2024 à Mayotte.",
+              "credit": "MAIWENN LE GOFF"
+            },
+            "enclosure": "https://img.lemde.fr/2024/04/30/0/0/4752/3168/700/0/75/0/e9140ca_1714460211815-migrants4-stade-cavani-mayotte-20042024-maii-wenn-le-goff.jpg"
+          }
+        ]
+      }
+    }
+  }

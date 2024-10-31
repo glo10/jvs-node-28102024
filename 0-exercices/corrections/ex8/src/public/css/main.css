@@ -1,0 +1,10 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: auto;
+  padding: 1em;
+}
+pre {
+  background: #f4f4f4;
+  padding: .5em;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Documentation API articles</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <!-- module qui transforme le markdown (.md) en HTML -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <div id="content"></div>
+  <script>
+    /**
+     * Requête asynchrone vers le serveur node pour
+     *  récupérer le contenu du README.md(documentation de l'API)
+     *  pour le transformer en HTML
+     *  et l'injecter dans la div#content positionné dans le HTML 
+     */ 
+    fetch('/doc')
+      .then(response => response.text())
+      .then(doc => {
+        document.getElementById('content').innerHTML = marked.parse(doc)
+      })
+      .catch(error => console.error('Erreur lors du chargement du Markdown:', error))
+  </script>
+</body>
+</html>
