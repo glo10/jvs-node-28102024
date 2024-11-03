@@ -1,0 +1,6 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  a(href="/admin/users") Liste d'utilisateurs (devrait être accessible qu'au admins avec un middleware qui vérifie un token, à partir du payload récupérer le rôle de l'utilisateur par exemple)
